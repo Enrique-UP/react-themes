@@ -1,0 +1,27 @@
+@import "./common/mixin.scss";
+.reviewsPage{
+    .outlineBox{text-align: center;
+        &::after{content:"Among my clients there are many renowned industries. Their websites are modern looking and reliable – thanks to me.";}
+    }
+    .allReviews{display: flex;flex-direction: column;
+        .reviewArea{display: flex;width:100%;position: relative;padding-left:100px;margin-bottom:30px;
+            &::before, &::after{content:"";position: absolute;left:40px;width:1px;}
+            &::before{content:"";height: 100%;bottom:0;background: var(--g1);}
+            &::after{top:80px;height:20px;width:1px;background: white;}
+            > .icon{position: absolute;left:0;top:0;width:80px;height: 80px;line-height: 80px;background: var(--head);color:white;font-size: 40px;}
+            .fw{display: flex;flex-direction: column;background: var(--bk4);border: 1px solid var(--bk1);padding:30px 30px 14px;
+                > img{display: none;}
+                p{}
+                .name{font-size: 30px;font-weight: 800;color:var(--b1);}
+                .place{font-size: 18px;font-weight: 600;color:var(--g1);}
+                .stars{color:var(--b2);font-size: 18px;display: flex;
+                    > *:not(:last-child){margin-right: 2px;}
+                }
+                .name, .place{margin-bottom: 5px;}
+            }
+        }
+    }
+    .btns{margin-bottom: 0;
+        > [class*="btn-"]{margin-bottom: 0;}
+    }
+}
