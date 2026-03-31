@@ -1,0 +1,23 @@
+.ads2{background:var(--cb1);
+    hgroup{padding-bottom: 0;max-width:900px;margin-inline: auto;row-gap:8px;
+        > *{color:#fff;}
+        .hd, p{text-transform: none;}
+        &::before, &::after{display: none;}
+    }
+    &{
+        @media (min-width:992px){
+            .hd{font-size: 48px;}
+        }
+        @media (max-width:767px){
+            &{
+                .subHead, .text {margin-bottom: 12px;}
+                .head {margin-bottom: 16px;}
+            }
+        }
+        @media (max-width:575px){
+            &{
+                .btns{margin-top: 8px;}
+            }
+        }
+    }
+}

@@ -1,0 +1,121 @@
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import { useFormik } from "formik";
+import * as Yup from 'yup';
+import { useNavigate } from "react-router-dom";
+
+const FormValidation = Yup.object({
+  user_name: Yup.string()
+    .matches(/^[A-Za-z\s]+$/, "Name should contain only alphabets.")  // Only alphabets and spaces
+    .min(3, "Name must be at least 3 characters long.")
+    .required("Please enter your name."),
+  user_email: Yup.string()
+    .email("Please enter a valid email address.")
+    .matches(
+      /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+      "Please enter a valid email address."
+    )
+    .required("Please enter your email."),
+
+//   country_code: Yup.string()
+//     .matches(/^\+\d{1,3}$/, "Please enter a valid country code (e.g., +1, +44 etc.).")
+//     .required("Please enter your country code."),
+
+  user_phone: Yup.string()
+    .matches(/^[0-9]{3,20}$/, "Please enter a valid phone number.")
+    .required("Please enter your phone number."),
+  user_message: Yup.string().min(2, "Message must be at least 2 characters long."),
+});
+
+const initialValues = {
+  user_name: "",
+  user_email: "",
+//   country_code: "",
+  user_phone: "",
+  user_message: "",
+}
+
+function FormArea() {
+  const form = useRef();
+  const navigate = useNavigate();
+
+  const formik = useFormik({
+    initialValues: initialValues,
+    validationSchema: FormValidation,
+    onSubmit: (values, { resetForm }) => {
+      emailjs.sendForm('service_naawjgt', 'template_a4uikdp', form.current, 'AfE4HvuZzuzIll5hy')
+        .then((result) => {
+            console.log(result.text);
+            resetForm();
+            // Redirect to Thank You page
+            navigate("/thankyou");
+        }, (error) => {
+            console.log(error.text);
+        });
+      resetForm();
+    }
+  });
+
+  return (
+    <>
+      <form ref={form} onSubmit={formik.handleSubmit} className='form'>
+        <div className="field">
+            <label htmlFor="user_name">Name</label>
+            <input 
+                type="text" 
+                name="user_name" 
+                value={formik.values.user_name} 
+                onBlur={formik.handleBlur} 
+                onChange={formik.handleChange} 
+                title="Name must be at least 3 characters."
+            />
+            {formik.errors.user_name && formik.touched.user_name && <small className="error">{formik.errors.user_name}</small>}
+        </div>{/* field */}
+        <div className="field">
+            <label htmlFor="user_email">Email</label>
+            <input 
+                type="email" 
+                name="user_email" 
+                value={formik.values.user_email} 
+                onBlur={formik.handleBlur} 
+                onChange={formik.handleChange} 
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" 
+                title="Please enter a valid email address." 
+            />
+            {formik.errors.user_email && formik.touched.user_email && <small className="error">{formik.errors.user_email}</small>}
+        </div>{/* field */}
+        <div className="field">
+            <label htmlFor="user_phone">Phone Number</label>
+            <input 
+                type="text" 
+                name="user_phone" 
+                value={formik.values.user_phone} 
+                onBlur={formik.handleBlur} 
+                onChange={formik.handleChange} 
+                pattern="[0-9]{3,20}" 
+                title="Please enter a valid phone number with 3 to 20 digits." 
+            />
+            {formik.errors.user_phone && formik.touched.user_phone && <small className="error">{formik.errors.user_phone}</small>}
+        </div>{/* field */}
+        <div className="field">
+            <label htmlFor="user_message">Message</label>
+            <textarea 
+                name="user_message" 
+                value={formik.values.user_message} 
+                onBlur={formik.handleBlur} 
+                onChange={formik.handleChange} 
+            />
+            {formik.errors.user_message && formik.touched.user_message && <small className="error">{formik.errors.user_message}</small>}
+        </div>{/* field */}
+        <div className="btns bsn">
+            <button type="submit">
+              <span>Submit</span>
+              {/* <i className="icon">&#xA021;</i> */}
+            </button>
+        </div>{/* btns */}
+      </form>
+    </>
+  );
+}
+
+export default FormArea;
