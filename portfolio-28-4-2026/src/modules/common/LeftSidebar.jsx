@@ -60,7 +60,7 @@ export default function LeftSidebar() {
               <li><HashLink to="/#tp" scroll={ScrollOffset}>Top Projects</HashLink></li>
               <li><HashLink to="/#exp" scroll={ScrollOffset}>Experience</HashLink></li>
               <li><HashLink to="/#edu" scroll={ScrollOffset}>Education</HashLink></li>
-              <li><HashLink to="/#ts" scroll={ScrollOffset}>Technical Skills</HashLink></li>
+              <li><HashLink to="/#ds" scroll={ScrollOffset}>Design Services</HashLink></li>
               <li><HashLink to="/#team" scroll={ScrollOffset}>Team</HashLink></li>
               <li><HashLink to="/#wcu" scroll={ScrollOffset}>Why Choose Us</HashLink></li>
               <li><HashLink to="/#bp" scroll={ScrollOffset}>Branding Projects</HashLink></li>

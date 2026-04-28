@@ -86,18 +86,24 @@ export default function Footer() {
                     <li><Link to="/">Home</Link></li>
                     <li><HashLink to="/#about" scroll={ScrollOffset}>About Us</HashLink></li>
                     <li><HashLink to="/#tp" scroll={ScrollOffset}>Top Projects</HashLink></li>
-                    <li><HashLink to="/#exp" scroll={ScrollOffset}>Exp</HashLink></li>
-                    <li><HashLink to="/#edu" scroll={ScrollOffset}>Edu</HashLink></li>
-                    <li><HashLink to="/#ts" scroll={ScrollOffset}>Skills</HashLink></li>
+                    <li><HashLink to="/#exp" scroll={ScrollOffset}>Experience</HashLink></li>
+                    <li><HashLink to="/#edu" scroll={ScrollOffset}>Education</HashLink></li>
+                    <li><HashLink to="/#ds" scroll={ScrollOffset}>Design Services</HashLink></li>
                     <li><HashLink to="/#team" scroll={ScrollOffset}>Team</HashLink></li>
-                    <li><HashLink to="/#wcu" scroll={ScrollOffset}>Wcu</HashLink></li>
+                    <li><HashLink to="/#wcu" scroll={ScrollOffset}>Why Choose Us</HashLink></li>
                     <li><HashLink to="/#bp" scroll={ScrollOffset}>Branding Projects</HashLink></li>
                     <li><Link to="/portfolio">Portfolio</Link></li>
                     <li><Link to="/reviews">Reviews</Link></li>
-                    <li><Link to="/lifestyle">Gallery</Link></li>
-                    <li><HashLink to="/#ch" scroll={ScrollOffset}>Ch</HashLink></li>
+                    <li><Link to="/lifestyle">Life Style</Link></li>
+                    <li><HashLink to="/#ch" scroll={ScrollOffset}>Childhood</HashLink></li>
                     <li><Link to="/poetry">Poetry</Link></li>
                     <li><Link to="/contactus">Contact Us</Link></li>
+
+
+
+
+
+
                     {/* <li><Link to="/inner">Inner Page</Link></li>
                     <li><Link to="/thankyou">Thank You</Link></li> */}
                   </ul>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const TsData = [
+const DsData = [
   {
     year: 2014,
     hd1: "Website",
@@ -183,7 +183,7 @@ const TsData = [
   }
 ];
 
-export default function TechinicalSkills() {
+export default function DesignServices() {
   const [activeIndex, setActiveIndex] = useState(null);
   const currentYear = new Date().getFullYear();
   // limit to 20 words
@@ -208,7 +208,7 @@ export default function TechinicalSkills() {
     }
   };
   return (
-    <section className="section skills back" id="ts">
+    <section className="section skills back" id="ds">
       <div className="container">
         <hgroup>
           <h2 data-aos="fade-down">Design <span>Services</span></h2>
@@ -218,7 +218,7 @@ export default function TechinicalSkills() {
           <div className="col-12">
             <div className="outlineBox dk" data-aos="fade-up"></div>{/* outlineBox */}
           </div>{/* cols */}
-          {TsData.map((item, index) => {
+          {DsData.map((item, index) => {
             const { short, isLong } = limitText(item.text);
             const isActive = activeIndex === index;
             const exp = getExperience(item.year);

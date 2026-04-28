@@ -10,7 +10,7 @@ import Ads2 from "../ads/Ads2";
 import Team from "./Team";
 import Education from "./Education";
 import Experience from "./Experience";
-import TechnicalSkills from "./TechnicalSkills";
+import DesignServices from "./DesignServices";
 import Ads3 from "../ads/Ads3";
 import Wcu from "./Wcu";
 import Ads4 from "../ads/Ads4";
@@ -41,7 +41,7 @@ export default function Home() {
       <TopProjects />
       <Experience />
       <Education />
-      <TechnicalSkills />
+      <DesignServices />
       <Ads4 />
       <LifestyleHome />
       <Childhood />
