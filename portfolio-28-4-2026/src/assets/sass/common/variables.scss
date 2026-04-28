@@ -1,0 +1,60 @@
+:root{
+    --c1:#022b4f;
+    --c2:#0077ff;
+
+    --f1:#000000;
+    --f2:#777777;
+    --f3:#333333;
+    --f4:#999999;
+    --f5:#434343;
+    --f6:#292929;
+    --f7:#8c8c8c;    
+
+    --cb1:#e22f45;
+    --cb2:#fbc02d;
+
+    --cb3:#00a383;
+    --cb4:#06b6d4;
+
+    --cb5:#6c5ce7;
+    --cb6:#d630ff;
+    
+    --cb7:#ff7a00;
+    --cb8:#e05a3b;
+    
+    --cb9:#8b5e3c;
+    --cb10:#34495c;
+        
+    --g1:#eee;
+    --g2:mintcream;
+    --g3:aliceblue;
+    --g4:ghostwhite;
+    --g5:honeydew;
+    --g6:lemonchiffon;
+    --g7:lavender;
+
+    --b1:#ccc;
+
+    --ff1: "Raleway", sans-serif;
+    --ff2: "Oswald", sans-serif;
+}
+
+
+%cnt{content:"";}
+
+
+%trans{transition: 0.3s cubic-bezier(0,0,1,0.1);-webkit-transition: 0.3s cubic-bezier(0,0,1,0.1);-moz-transition: 0.3s cubic-bezier(0,0,1,0.1);}
+%transl{transition: 0.3s linear;-webkit-transition: 0.3s linear;-moz-transition: 0.3s linear;}
+%transd{transition-delay:0.3s;-webkit-transition-delay:0.3s;-moz-transition-delay:0.3s;}
+
+
+%fc{display: flex;flex-direction: column;}
+%center{display: flex;justify-content: center;align-items: center;}
+%userSelect{user-select: none;-webkit-user-select: none;-moz-user-select: none;}
+
+%scroll {scrollbar-width: thin;scrollbar-color: #888 #f1f1f1;
+    &::-webkit-scrollbar {width: 12px;}
+    &::-webkit-scrollbar-track {background: #f1f1f1;}
+    &::-webkit-scrollbar-thumb {background-color: #888;border-radius: 6px;}
+    &::-webkit-scrollbar-thumb:hover {background: #555;}
+}

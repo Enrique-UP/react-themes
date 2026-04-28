@@ -1,0 +1,148 @@
+@media (min-width:1400px){}
+
+
+
+
+@media (max-width:1399px){
+    .poetry {grid-template-columns: repeat(1, minmax(0, 1fr));}
+}
+@media (min-width:1200px) and (max-width:1399px){
+    header .fw {grid-template-columns: 20% 60% 20%;}
+}
+
+
+
+
+@media (max-width:1199px){
+    body.back .fixNum{display: none;}
+}
+@media (min-width:992px) and (max-width:1199px){
+    .form .field textarea {height:147px;min-height: 147px;}
+    .port article {flex-direction: column;}
+    .port figure{width: 100%;}
+
+}
+
+
+
+
+@media (max-width:991px){
+    .searchBar{top:92px;}
+}
+@media (min-width:768px) and (max-width:991px){
+    .banner.homeBanner .container{padding-bottom: 56px;}
+    main > .banner .hd {font-size: 56px;}
+    main > .banner .txt {font-size: 20px;}
+}
+@media (min-width:576px) and (max-width:991px){
+    hgroup h1, hgroup h2, hgroup h3, hgroup h4, hgroup h5, hgroup h6 {font-size: 56px;}
+    hgroup p{font-size: 20px;}
+}
+
+
+
+
+@media (min-width:768px){
+    main{
+        .blt, .blb, .bltb{
+            &::before, &::after{height: 80px;}
+        }
+        > .blt{margin-top: 80px;}
+        > .blb{margin-bottom: 80px;}
+        > .bltb{margin-block: 80px;}
+    }
+}
+@media (max-width:767px){
+    main{
+        .blt, .blb, .bltb{
+            &::before, &::after{height: 56px;}
+        }
+        > .blt{margin-top: 56px;}
+        > .blb{margin-bottom: 56px;}
+        > .bltb{margin-block: 56px;}
+    }
+    main > .banner .cnt {text-align: center;}
+    main > .banner .txt {font-size: 18px;}
+    hgroup{text-align: center;}
+    hgroup .btns{margin-top: 0;}
+    .btns{justify-content: center;}
+    .btns{margin-bottom: 16px;
+        a, button{padding:12px 60px 12px 14px;
+            &::before{width:40px;}
+            &::after{right:40px;}
+        }
+    }
+    .unlist, .list {margin-bottom: 12px;
+        > li{padding-left: 24px;
+            &::before{width: 16px;height: 16px;}
+        }
+    }
+    .contactPage .contactBox{gap:16px;}
+
+    main > .banner .hd, main > .banner .txt{justify-content: center;}
+    main > .banner .hd, main > .banner .txt{text-align: center;}
+
+    .fixNum{font-size: 14px;display: flex;}
+
+    .outlineBox {padding: 24px 16px;row-gap: 4px;}
+    .outlineBox > b {font-size: 24px;}
+    .outlineBox > span {font-size: 14px;}
+
+    main > .innerPage .order {row-gap: 16px;}
+    .poetry {row-gap: 8px !important;}
+    .banner.homeBanner .container{padding-bottom: 28px;}
+    .port {row-gap: 56px;}
+}
+@media (min-width:576px) and (max-width:767px){
+    .list>li::before, .unlist>li::before{top:3px;}
+    main > .banner .hd {font-size: 48px;}
+    main > .banner .cnt {row-gap: 8px;}
+}
+@media (max-width:575px){
+    hgroup{margin-bottom: 24px;row-gap: 4px;padding-bottom: 24px;}
+    hgroup h1, hgroup h2, hgroup h3, hgroup h4, hgroup h5, hgroup h6{font-size: 48px;}
+    hgroup p{font-size: 18px;}
+    
+    main > .banner .cnt {row-gap: 4px;}
+    main > .banner .hd{font-size: 50px;}
+    main > .banner .txt{font-size: 18px;}
+    
+    .list>li::before, .unlist>li::before{top:4px;}
+
+    .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {font-size: 20px;}
+    .content h1:not(:first-child), .content h2:not(:first-child), .content h3:not(:first-child), .content h4:not(:first-child), .content h5:not(:first-child), .content h6:not(:first-child) {margin-top: 8px;}
+
+    .faqs{padding: 24px 16px;}
+    .faqs .faqsArea:not(:first-child){padding-top: 16px;}
+    .faqs .faqsArea:not(:last-child){padding-bottom: 16px;}
+
+    .contactPage .form{padding:24px 16px;}
+    .contactPage .contactBox > li > a{padding: 16px;column-gap: 12px;}
+
+    .note{font-size: 18px;}
+
+    main > .bd hgroup ul > li > a, main > .bd hgroup ol > li > a{font-size: 16px;}
+    
+    .port .hd{font-size: 24px;padding-left: 48px;}
+    .port .hd::after{left:6px;}
+    .port .hd::before {border-left-width:40px;}
+    .port article {padding-left: 16px;}
+    .port figcaption > span::before{left: -27px;width: 22px;height: 22px;font-size: 12px;border-radius: 0;}
+
+    .about img {border-width: 4px;}
+}
+@media (min-width:441px) and (max-width:575px){
+    .port figure {padding: 6px;}
+    .port article {column-gap: 12px;}
+}
+@media (max-width:460px){
+    .contactPage .contactBox > li > a{column-gap: 12px;}
+    .contactPage .contactBox > li .icon{width: 60px;height: 60px;}
+    .contactPage .contactBox > li b{font-size: 18px;}
+    .contactPage .contactBox > li span{font-size: 14px;}
+}
+@media (max-width:440px){
+    .port .portArea {border-right: 1px solid var(--b1);}
+    .port article {flex-direction: column;padding-right: 16px;}
+    .port figure {width: 100%;}
+}

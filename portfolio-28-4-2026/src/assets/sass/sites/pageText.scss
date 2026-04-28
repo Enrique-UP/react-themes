@@ -1,0 +1,59 @@
+[data-num]::before{content:"+1 000 000 0000";}
+[data-email]::before{content:"office@example.com";}
+[data-address]::before{content:"25-Lorem ipsum dolor sit ameet.";}
+
+
+.blsisl::before{content: "BLS International Services Limited";}
+
+
+.welcome .text::after{content: "I am dedicated to creating exceptional digital experiences through modern design, intuitive interfaces, and advanced functionality. Explore my work, services, and creative solutions, all driven by passion, professionalism, and a commitment to excellence. With a strong focus on detail and usability, I ensure that every project reflects both creativity and performance. I aim to build digital solutions that are visually appealing and deliver real value to users, turning ideas into impactful experiences. I continuously refine my skills and stay updated with the latest trends to deliver innovative solutions. My focus is always on creating meaningful and user-centric results.";}
+
+.skills .outlineBox::before{content: "Web design is my core expertise, and I provide a wide range of solutions tailored to different project needs. Whether your project is small or complex, I ensure fast delivery without compromising on quality. I approach every challenge with confidence and dedication, consistently delivering results that meet client expectations.";}
+
+.wcu .outlineBox::before{content: "I am dedicated to delivering high-quality services by keeping my solutions simple, user-friendly, and effective. I believe in complete transparency, ensuring you stay informed about your project at every stage. The success of my clients reflects the quality of my work.";}
+
+.portTitle.outlineBox::before{content:"My portfolio includes many successful projects and dozens of satisfied clients. Some of the websites I’ve worked on have grown into profitable startups with thousands of daily visitors. Explore my portfolio to learn more about my skills and design approach. I create visually appealing, functional websites tailored to client needs without unnecessary complexity.";}
+
+.reviewsTitle.outlineBox::before{content:"Feedback from clients who have trusted my services and achieved successful results. I focus on understanding their needs, delivering high-quality solutions, and maintaining clear communication throughout the process. Their experiences reflect my commitment to reliability, performance, and creating user-friendly digital solutions that help businesses grow and succeed.";}
+
+.bp .outlineBox::before{content:"Explore my branding projects, where creativity meets strategy to build strong and memorable brand identities. From complete visual systems to cohesive brand experiences, each project reflects a deep understanding of brand values and user perception. I focus on delivering consistent, impactful designs that help businesses stand out and connect with their audience effectively.";}
+
+
+
+footer .text > span{
+    &:first-of-type::after{content:"Hello, I am Nomaan Arif, a UI/UX Developer from India. I specialize in designing and developing user-focused websites across industries such as Travel, E-Commerce, Charity, Education, Tech Support, Visa, Passport, Consular, Attestation, Flights Ticket, IT-Solutions, Online Payment, Digitization, Tree Plantation and Accounting etc.";}
+    &:last-of-type::after{content: " " "I’m passionate about cricket, having played at multiple levels, and I’m also interested in politics and social work.";}
+}
+
+
+
+
+
+
+
+
+
+.about .lists > li:nth-child(1)::after{content:"Attestation Services of India";}
+.about .lists > li:nth-child(2)::after{content:"Attestation Services";}
+.about .lists > li:nth-child(3)::after{content:"High Commission of India";}
+.about .lists > li:nth-child(4)::after{content:"High Commission of Malaysia";}
+.about .lists > li:nth-child(5)::after{content:"Embassy of Italy";}
+.about .lists > li:nth-child(6)::after{content:"Embassy of Spain";}
+.about .lists > li:nth-child(7)::after{content:"Embassy of India";}
+.about .lists > li:nth-child(8)::after{content:"Embassy of Hungary";}
+.about .lists > li:nth-child(9)::after{content:"Embassy of U.A.E";}
+.about .lists > li:nth-child(10)::after{content:"Embassy of France";}
+.about .lists > li:nth-child(11)::after{content:"Embassy of Brazil";}
+.about .lists > li:nth-child(12)::after{content:"Embassy of India, Poland";}
+.about .lists > li:nth-child(13)::after{content:"Embassy of The State of Kuwait";}
+.about .lists > li:nth-child(14)::after{content:"Consulate General of India";}
+.about .lists > li:nth-child(15)::after{content:"Consulate General of Spain";}
+.about .lists > li:nth-child(16)::after{content:"Spanish Consulate General of Spain";}
+.about .lists > li:nth-child(17)::after{content:"Consulate of Spain";}
+.about .lists > li:nth-child(18)::after{content:"Spanish Honorary Consulate";}
+.about .lists > li:nth-child(19)::after{content:"(Mobile City (Moscow)) Mobile Biometric";}
+.about .lists > li:nth-child(20)::after{content:"VAC (Visa Application Center) Presence";}
+.about .lists > li:nth-child(21)::after{content:"Embassy of many countries of world";}
+.about .lists > li:nth-child(22)::after{content:"Approved by The Ministry of External Affairs Government of India";}
+.about .lists > li:nth-child(23)::after{content: "Travomint.com is ranked among the top 15 flight ticket booking platforms in India.";}
+.about .lists > li:nth-child(24)::after{content:"Careerera was awarded by The Times of India for its contribution to online education.";}
