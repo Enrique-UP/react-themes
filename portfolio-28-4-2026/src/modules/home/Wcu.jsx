@@ -72,7 +72,7 @@ export default function Wcu(){
                         <div className="col-12">
                             <hgroup>
                                 <h4 data-aos="fade-down">Why <span>Choose</span> Us?</h4>
-                                <p data-aos="fade-up">Your success is my priority—delivering intuitive, scalable solutions.</p>
+                                <p data-aos="fade-up">Your success is my priority—delivering intuitive, scalable solutions</p>
                             </hgroup>
                         </div>{/* cols */}
                         <div className="col-lg-4 col-xxl-3">

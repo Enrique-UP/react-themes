@@ -104,7 +104,7 @@ export default function Experience() {
     <section className="section experience back" id="exp">
       <hgroup>
         <h2 data-aos="fade-down">Work <span>Experience</span></h2>
-        <p data-aos="fade-up">A summary of my professional journey.</p>
+        <p data-aos="fade-up">A summary of my professional journey</p>
       </hgroup>
 
       <div className="container">

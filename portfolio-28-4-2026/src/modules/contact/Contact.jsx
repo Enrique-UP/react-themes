@@ -54,13 +54,13 @@ export default function Contact() {
       </Helmet>
       <Banner
         pageName="Contact Us"
-        pageText="Lorem ipsum dolor sit amet consectetur adipisicing elit dolores distinctio tempora illo nostrum dignissimos dolore voluptate harum recusandae tempore minus"
+        pageText="We’re here to help you with any queries, project discussions, or collaboration opportunities. Let’s connect and build something great together."
       />
       <section className="section">
         <div className="container">
           <hgroup>
-            <h2 data-aos="fade-down">Contact <span>Us</span></h2>
-            <p data-aos="fade-up">We're here to help you</p>
+            <h2 data-aos="fade-down">Get in <span>Touch</span></h2>
+            <p data-aos="fade-up">Let’s build something great together</p>
           </hgroup>
           <div className="sideMid">
             <LeftSidebar />

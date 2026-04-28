@@ -149,7 +149,7 @@ export default function Portfolio() {
         <div className="container">
           <hgroup>
             <h2 data-aos="fade-down">Explore <span>My Work</span></h2>
-            <p data-aos="fade-up">A showcase of my UI/UX and web development work.</p>
+            <p data-aos="fade-up">A showcase of my UI/UX and web development work</p>
           </hgroup>
 
           <div className="sideMid">

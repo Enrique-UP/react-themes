@@ -77,14 +77,14 @@ export default function Lifestyle() {
 
       <Banner
         pageName="Life Style"
-        pageText="Dynamic lifestyle gallery with categories"
+        pageText="A dynamic lifestyle collection showcasing moments, experiences, and personal journey."
       />
 
       <section className="section lifeStyle colors">
         <div className="container">
           <hgroup>
             <h2 data-aos="fade-down">Image <span>Gallery</span></h2>
-            <p data-aos="fade-up">Capturing moments that reflect my journey and experiences</p>
+            <p data-aos="fade-up">Capturing moments from my journey, memories, and experiences</p>
           </hgroup>
           <div className="sideMid">
             <LeftSidebar />

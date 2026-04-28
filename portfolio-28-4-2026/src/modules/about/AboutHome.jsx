@@ -54,7 +54,7 @@ export default function AboutHome() {
       <div className="container">
         <hgroup>
           <h2 data-aos="fade-down">About <span>Me</span></h2>
-          <p data-aos="fade-up">Get to know more about me and my professional journey.</p>
+          <p data-aos="fade-up">Get to know more about me and my professional journey</p>
         </hgroup>
         <div className="fw">
           <div className="cols1">
