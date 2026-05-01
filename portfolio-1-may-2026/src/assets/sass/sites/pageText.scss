@@ -1,0 +1,55 @@
+// Nomaan Arif
+// Frontend Developer
+
+// Developing Modern & Dynamic Web Experiences
+// Developing Fast & Interactive Web Interfaces
+// Developing Smart & Efficient Web Solutions
+// Developing Clean & User-Friendly Interfaces
+
+
+[data-num]::before{content:"+1 000 000 0000";}
+[data-email]::before{content:"office@example.com";}
+[data-address]::before{content:"25-Lorem ipsum dolor sit ameet.";}
+
+
+.blsisl::before{content: "BLS International Services Limited";}
+
+
+.welcome .text::after{content: "I am dedicated to creating exceptional digital experiences through modern design, intuitive interfaces, and advanced functionality. Explore my work, services, and creative solutions, all driven by passion, professionalism, and a commitment to excellence. With a strong focus on detail and usability, I ensure that every project reflects both creativity and performance. I aim to build digital solutions that are visually appealing and deliver real value to users, turning ideas into impactful experiences. I continuously refine my skills and stay updated with the latest trends to deliver innovative solutions. My focus is always on creating meaningful and user-centric results.";}
+
+.skills .outlineBox::before{content: "Web design is my core expertise, and I provide a wide range of solutions tailored to different project needs. Whether your project is small or complex, I ensure fast delivery without compromising on quality. I approach every challenge with confidence and dedication, consistently delivering results that meet client expectations.";}
+
+.wcu .outlineBox::before{content: "I am dedicated to delivering high-quality services by keeping my solutions simple, user-friendly, and effective. I believe in complete transparency, ensuring you stay informed about your project at every stage. The success of my clients reflects the quality of my work.";}
+
+.portTitle.outlineBox::before{content:"My portfolio includes many successful projects and dozens of satisfied clients. Some of the websites I’ve worked on have grown into profitable startups with thousands of daily visitors. Explore my portfolio to learn more about my skills and design approach. I create visually appealing, functional websites tailored to client needs without unnecessary complexity.";}
+
+.reviewsTitle.outlineBox::before{content:"Feedback from clients who have trusted my services and achieved successful results. I focus on understanding their needs, delivering high-quality solutions, and maintaining clear communication throughout the process. Their experiences reflect my commitment to reliability, performance, and creating user-friendly digital solutions that help businesses grow and succeed.";}
+
+.bp .outlineBox::before{content:"Explore my branding projects, where creativity meets strategy to build strong and memorable brand identities. From complete visual systems to cohesive brand experiences, each project reflects a deep understanding of brand values and user perception. I focus on delivering consistent, impactful designs that help businesses stand out and connect with their audience effectively.";}
+
+
+
+footer .text.about > span{
+    &:first-of-type::after{content:"Hello, I am Nomaan Arif, a UI/UX Developer from India. I specialize in designing and developing user-focused websites across industries such as Travel, E-Commerce, Charity, Education, Tech Support, Visa, Passport, Consular, Attestation, Flights Ticket, IT-Solutions, Online Payment, Digitization, Tree Plantation and Accounting etc.";}
+    &:last-of-type::after{content: " " "I’m passionate about cricket, having played at school, club, and corporate levels, and I’m also interested in politics and social work.";}
+}
+footer .text.disclaimer > span{
+    &::after{content:" " "This website is not affiliated with any brand or company. It is created to share information about me and showcase my work. Any third-party templates or links are used for demonstration purposes only. All content on this website is intended for portfolio and informational use, and does not imply any official association, partnership, or endorsement with any external organization.";}
+}
+
+
+
+
+
+
+
+
+
+.about .lists.projects > li:nth-child(1)::after {content: "Worked on a website approved by the Ministry of External Affairs, New Delhi, and recognized by the embassies of Qatar and the UAE in India.";}
+.about .lists.projects > li:nth-child(2)::after {content: "Contributed from the early development stage of Travomint.com, which later ranked among the top 15 flight ticket booking platforms in India.";}
+.about .lists.projects > li:nth-child(3)::after {content: "Contributed to the redesign of Careerera, later recognized by The Times of India for its contribution to the online education sector.";}
+.about .lists.projects > li:nth-child(4)::after {content: "Contributed to attestation service platforms for India and other countries.";}
+.about .lists.projects > li:nth-child(5)::after {content: "Contributed to High Commission websites for India and Malaysia.";}
+.about .lists.projects > li:nth-child(6)::after {content: "Contributed to embassy websites across multiple countries, including India, Italy, Spain, Hungary, the UAE, France, Brazil, India (in Poland), and Kuwait.";}
+.about .lists.projects > li:nth-child(7)::after {content: "Contributed to Consulate General websites for India and Spain, including the Spanish Consulate General, Consulate of Spain, and Spanish Honorary Consulate platforms.";}
+.about .lists.projects > li:nth-child(8)::after {content: "Contributed to Mobile Biometric services for Mobile City (Moscow) and Visa Application Center (VAC) presence.";}
