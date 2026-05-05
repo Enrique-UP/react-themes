@@ -3,6 +3,7 @@
         > *{color:#fff;}
         .hd{font-family: var(--ff1);font-size: 56px;}
         .hd, p{text-transform: none;}
+        p{font-weight: normal;}
         &::before, &::after{display: none;}
     }
     .btns{

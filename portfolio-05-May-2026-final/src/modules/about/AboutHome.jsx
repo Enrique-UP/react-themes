@@ -5,6 +5,9 @@ import img1 from "../../assets/images/about/about1.jpg";
 import img2 from "../../assets/images/about/about2.jpg";
 import img3 from "../../assets/images/about/about3.jpg";
 import img3_1199 from "../../assets/images/about/about3_1199.jpg";
+import img1_575 from "../../assets/images/about/about1_575.jpg";
+import img2_575 from "../../assets/images/about/about2_575.jpg";
+import img3_575 from "../../assets/images/about/about3_575.jpg";
 
 import { Global } from "../common/Global";
 import { Link } from "react-router-dom";
@@ -71,12 +74,19 @@ export default function AboutHome() {
           <div className="cols1">
             <div className="images">
               <div className="imgArea1">
-                <picture data-aos="fade-right"><img src={img1} /></picture>
-                <picture data-aos="fade-left"><img src={img2} /></picture>
+                <picture data-aos="fade-right">
+                  <source media="(max-width: 575px)" srcset={img1_575} />
+                  <img src={img1} />
+                </picture>
+                <picture data-aos="fade-left">
+                  <source media="(max-width: 575px)" srcset={img2_575} />
+                  <img src={img2} />
+                </picture>
               </div>{/* imgArea */}
               <div className="imgArea2">
                 <picture data-aos="fade-down">
                   <source media="(min-width: 576px) and (max-width: 1199px)" srcset={img3_1199} />
+                  <source media="(max-width: 575px)" srcset={img3_575} />
                   <img src={img3} />
                 </picture>
               </div>{/* imgArea */}

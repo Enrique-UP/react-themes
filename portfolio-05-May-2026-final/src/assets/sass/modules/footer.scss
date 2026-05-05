@@ -24,7 +24,7 @@ footer{background: var(--f3);
                 &:hover, &:active, &:focus {background: var(--c3);color: #fff;}
             }
         }
-        .date{background: var(--c5);color:#fff;flex-shrink: 0;@extend %fc;text-align: center;justify-content: center;line-height: 1;padding: 20px 10px;font-weight: bold;width: 80px;white-space:nowrap;
+        .date{background: var(--c5);color:#fff;flex-shrink: 0;@extend %fc;text-align: center;justify-content: center;line-height: 1;padding: 20px 10px;font-weight: bold;width: 80px;white-space:nowrap;row-gap: 2px;
             > b{text-transform: uppercase;font-size: 16px;}
             > i{font-style: normal;font-size: 22px;}
         }

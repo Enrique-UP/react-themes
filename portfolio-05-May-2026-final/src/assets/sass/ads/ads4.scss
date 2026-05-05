@@ -1,7 +1,7 @@
 .ads4{background:var(--c12);
     .row{justify-content: flex-start;}
     ul{width: 100%;display: flex;background:var(--c12);
-        > li{width: 50%;list-style: none;@extend %fc;row-gap:20px;
+        > li{width: 50%;list-style: none;@extend %fc;row-gap:16px;
             &:first-child{padding: 80px 32px 80px 0;justify-content: center;}
         }
     }
