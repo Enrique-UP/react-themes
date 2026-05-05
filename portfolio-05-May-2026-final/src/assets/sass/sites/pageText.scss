@@ -21,7 +21,7 @@
 
 .wcu .outlineBox::before{content: "I am dedicated to delivering high-quality services by keeping my solutions simple, user-friendly, and effective. I believe in complete transparency, ensuring you stay informed about your project at every stage. The success of my clients reflects the quality of my work.";}
 
-.portTitle.outlineBox::before{content:"My portfolio includes many successful projects and dozens of satisfied clients. Some of the websites I’ve worked on have grown into profitable startups with thousands of daily visitors. Explore my portfolio to learn more about my skills and design approach. I create visually appealing, functional websites tailored to client needs without unnecessary complexity.";}
+.portTitle.outlineBox::before{content:"My portfolio includes many successful projects and dozens of satisfied clients. Some of the websites I've worked on have grown into profitable startups with thousands of daily visitors. Explore my portfolio to learn more about my skills and design approach. I create visually appealing, functional websites tailored to client needs without unnecessary complexity.";}
 
 .reviewsTitle.outlineBox::before{content:"Feedback from clients who have trusted my services and achieved successful results. I focus on understanding their needs, delivering high-quality solutions, and maintaining clear communication throughout the process. Their experiences reflect my commitment to reliability, performance, and creating user-friendly digital solutions that help businesses grow and succeed.";}
 
@@ -30,8 +30,8 @@
 
 
 footer .text.about > span{
-    &:first-of-type::after{content:"Hello, I am Nomaan Arif, a UI/UX Developer from India. I specialize in designing and developing user-focused websites across industries such as Travel, E-Commerce, Charity, Education, Tech Support, Visa, Passport, Consular, Attestation, Flights Ticket, IT-Solutions, Online Payment, Digitization, Tree Plantation and Accounting etc.";}
-    &:last-of-type::after{content: " " "I’m passionate about cricket, having played at school, club, and corporate levels, and I’m also interested in politics and social work.";}
+    &:first-of-type::after{content:"Hello, I am Nomaan Arif, a Frontend Developer from India. I specialize in designing and developing user-focused websites across industries such as Travel, E-Commerce, Charity, Education, Tech Support, Visa, Passport, Consular, Attestation, Flights Ticket, IT-Solutions, Online Payment, Digitization, Tree Plantation and Accounting etc.";}
+    &:last-of-type::after{content: " " "I'm passionate about cricket, having played at school, club, and corporate levels, and I'm also interested in politics and social work.";}
 }
 footer .text.disclaimer > span{
     &::after{content:" " "This website is not affiliated with any brand or company. It is created to share information about me and showcase my work. Any third-party templates or links are used for demonstration purposes only. All content on this website is intended for portfolio and informational use, and does not imply any official association, partnership, or endorsement with any external organization.";}

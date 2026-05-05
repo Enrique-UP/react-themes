@@ -19,6 +19,7 @@ import img3 from "../../assets/images/portfolio/snva/travomint_com.jpg";
 import img4 from "../../assets/images/portfolio/i2a/akountobooks_com.jpg";
 import img5 from "../../assets/images/portfolio/si/alefmeem_store.jpg";
 import img6 from "../../assets/images/portfolio/i2a/zippyconvert_com.jpg";
+import { Link } from "react-router-dom";
 
 const TpData = [
     {
@@ -198,6 +199,11 @@ export default function TopProjects() {
                                 {...val}
                             />
                         ))}
+                        <div className="col-12">
+                            <div className="btns center">
+                                <Link to="/portfolio" data-aos="fade-left">View More</Link>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

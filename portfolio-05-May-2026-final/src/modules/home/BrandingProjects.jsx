@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 import Lightbox from "yet-another-react-lightbox";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
@@ -149,6 +150,11 @@ export default function BrandingProjects() {
                 {...item}
               />
             ))}
+            <div className="col-12">
+              <div className="btns center">
+                <Link to="/portfolio" data-aos="fade-left">View More</Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>

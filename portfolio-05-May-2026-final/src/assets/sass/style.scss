@@ -39,6 +39,11 @@ body{
     -moz-osx-font-smoothing: grayscale;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
+    color:var(--f1);
+    &::before{width: 100%;height: 100%;position: fixed;top:0;left:100%;background: rgba(0,0,0,0.9);z-index: 99999;content:"";@extend %trans;}
+    &.back{overflow: hidden;
+        &::before{left:0;}
+    }
 }
 
 a, button{@extend %trans;text-decoration: none;}
@@ -46,18 +51,10 @@ b, strong{font-weight: bold;}
 img{@extend %userSelect;}
 img[data-src], img[data-img]{background: url(../images/icons/loader.gif) no-repeat center center;}
 
-body{color:var(--f1);
-    &::before{width: 100%;height: 100%;position: fixed;top:0;left:100%;background: rgba(0,0,0,0.9);z-index: 99999;content:"";@extend %trans;}
-    &.back{overflow: hidden;
-        &::before{left:0;}
-    }
-}
-
 main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit-fill-available;min-height: 100dvh;
     > *{width:100%;@extend %fc;}
     > hr{height: 1px;border: none;background: var(--b1);}
-    > .banner{
-        background: var(--c1);color:#fff;
+    > .banner{background: var(--c1);color:#fff;
         .cnt{width: 100%;@extend %fc;row-gap:16px;position: relative;z-index: 1;height: 100%;justify-content: center;}
         .hd{font-size: 72px;font-weight: 900;line-height: 1.1;}
         .txt{font-size: 24px;}
@@ -109,18 +106,18 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
     }
 }
 
-.outlineBox {width: 100%;border: 1px solid var(--f1);padding: 32px;@extend %fc;row-gap:8px;
+.outlineBox {width: 100%;border: 1px solid var(--f1);padding: 24px;@extend %fc;row-gap:8px;
     &:not(.dk){background: var(--g4);color: var(--f2);}
     &.dk{background: var(--f1) !important;border-color: transparent;color:#fff;
         > *{color:#fff;}
     }
-    > b{font-size: 28px;font-weight: bold;line-height: 1.2;color: var(--f1);}
+    > b{font-size: 24px;font-weight: bold;line-height: 1.2;color: var(--f1);}
     > span{font-size: 16px;}
 }
 
 .unlist, .list{@extend %fc;margin-bottom:24px;row-gap:12px;
     > li{list-style: none;position: relative;padding-left:28px;
-        &::before{width: 20px;height: 20px;border-radius: 100%;background: var(--c1);position: absolute;top:3px;left:0;color:#fff;font-size: 12px;@extend %center;font-weight: bold;}
+        &::before{width: 20px;height: 20px;border-radius: 100%;background: var(--c1);position: absolute;top:3px;left:0;color:#fff;font-size: 12px;font-weight: bold;@extend %center;}
         &:not(:last-child){margin-bottom: 12px;}
         b, strong{font-weight: bold;}
         > a{color:inherit;}
@@ -211,8 +208,8 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
 .callRight{bottom: 140px;}
 
 
-.fixNum{width: 100%;background: var(--c3);color:#fff;position: sticky;left: 0;bottom: 0;z-index: 99999;padding: 12px 8px;font-size: 16px;font-weight: bold;text-decoration: none;line-height: 1.3;display: none;flex-direction: row;justify-content: center;text-align: center;cursor: pointer;
-    &:hover, &:active, &:focus{background: var(--c4);color:var(--f1);}
+.fixNum{width: 100%;background: var(--c1);color:#fff;position: sticky;left: 0;bottom: 0;z-index: 99999;padding: 12px 8px;font-size: 16px;font-weight: bold;text-decoration: none;line-height: 1.3;display: none;flex-direction: row;justify-content: center;text-align: center;cursor: pointer;
+    &:hover, &:active, &:focus{background: var(--c12);}
     & > i{margin-right: 4px;}
 }
 
@@ -277,12 +274,10 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
         }
         > p:not(.notes){color: var(--f4);}
         .notes{color: var(--c2);}
-
     }
     figure{width: 150px;border:1px solid var(--b1);background: #fff;display: flex;flex-shrink: 0;max-width: 100%;align-self: flex-start;cursor: pointer;max-height:400px;
         > img{width: 100%;object-fit: contain;}
     }
-    // .text::before{content:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi maiores quis iste architecto asperiores enim tenetur, sit, quos voluptate id repudiandae ab veritatis hic perferendis porro! Voluptatum recusandae delectus vero iusto nisi laboriosam iste praesentium officia commodi ratione doloremque pariatur impedit minus, quaerat a ut perspiciatis, saepe est eaque id cumque modi maxime fugiat dolores. Assumenda illo architecto, natus unde ullam provident, repellat exercitationem voluptas officia fuga reiciendis dignissimos at mollitia aliquam perspiciatis temporibus eum consequuntur iste.';}
 }
 
 // main:has(> .thankYou) > :not(.thankYou) {

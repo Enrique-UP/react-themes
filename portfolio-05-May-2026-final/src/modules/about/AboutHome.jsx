@@ -71,13 +71,13 @@ export default function AboutHome() {
           <div className="cols1">
             <div className="images">
               <div className="imgArea1">
-                <picture><img src={img1} data-aos="fade-right" /></picture>
-                <picture><img src={img2} data-aos="fade-left" /></picture>
+                <picture data-aos="fade-right"><img src={img1} /></picture>
+                <picture data-aos="fade-left"><img src={img2} /></picture>
               </div>{/* imgArea */}
               <div className="imgArea2">
-                <picture>
+                <picture data-aos="fade-down">
                   <source media="(min-width: 576px) and (max-width: 1199px)" srcset={img3_1199} />
-                  <img src={img3} data-aos="fade-up" />
+                  <img src={img3} />
                 </picture>
               </div>{/* imgArea */}
             </div>{/* images */}
@@ -99,11 +99,11 @@ export default function AboutHome() {
               <p>I am currently working with a leading IT software company where I contribute to the development of high-quality digital platforms and scalable solutions.</p>
               <p>I collaborate closely with clients and business teams to understand requirements and transform them into effective and user-centric digital products.</p>
             </div>{/* cnt */}
-            {/* ✅ Desktop only */}
+            {/* Desktop only */}
             {/* {!isMobile && TextBlock} */}
           </div>{/* cols2 */}
           <div className="cols3">
-            {/* ✅ Mobile only */}
+            {/* Mobile only */}
             {isMobile && TextBlock}
             <div className="cnt">
               <p className="hd">My Story</p>
@@ -131,7 +131,7 @@ export default function AboutHome() {
             <div className="cnt">
               <p className="hd">My Vision</p>
               <p>My vision is to establish myself as a leading Frontend Developer by consistently delivering exceptional and impactful design solutions. I aspire to build a strong professional identity recognized for creativity, quality, and reliability. Through dedication and continuous learning, I aim to work on diverse global projects, contribute to meaningful digital transformations, and set high standards in user experience and interface design.</p>
-            </div>{/* cnt */}            
+            </div>{/* cnt */}
             <div className="cnt">
                 <p className="hd">Frontend Development Skills</p>
                 <p className="shd">Technologies and tools I use to create responsive and interactive web applications.</p>
@@ -159,7 +159,7 @@ export default function AboutHome() {
                   </article>
                   <article data-aos="fade-right">
                     <p>
-                      <b>React JS & VITE</b>
+                      <b>React JS & Vite</b>
                       <CounterNum target={65} suffix="%" />
                     </p>
                     <i></i>
@@ -232,13 +232,29 @@ export default function AboutHome() {
               
               <div className="cnt">
                 <p className="hd">My Family Background</p>
+                
                 <p>I come from an old, reputed, and sports-oriented family based in the Budaun district of Uttar Pradesh, India. My great-great-grandfather, Late Mr. Saifuddin, and my great-grandfather, Late Mr. Shamsuddin, were both prominent zamindars. My great-grandfather, Late Mr. Shamsuddin, owned around 19 brick kilns. His legacy is also recorded in a 1935 publication published in Amritsar, Punjab. They were widely known for resolving community matters and promoting unity among people.</p>
+
                 <p>My grandfather, Late Mr. Qamaruddin, served in the Indian Army before resigning to manage and expand his family business. He carried forward this legacy with significant landholdings and business ventures, including brick kilns. He also served as the District President of the Brick Kiln Association. He served as Vice Chairman in Ujhani and became a well-recognized and respected personality in the region. He was also known for resolving community matters and helping people reach fair decisions. Alongside his professional achievements, he was a national-level cricketer who represented Uttar Pradesh as a wicketkeeper and batsman. He was also skilled in hockey and chess, reflecting his versatile personality. He was known as an intelligent and capable individual who strongly believed in social harmony, promoting unity among communities and respect for all religions.</p>
+
+                <p>Our family is related to the world-famous wrestler The Great Gama (Ghulam Mohammad Baksh Bhatt), who is known as "Rustam-e-Hind" and was my grandfather's cousin. He never lost a match in his wrestling career and is remembered as one of the greatest wrestlers in history.</p>
+
                 <p>Continuing this legacy, my father, Mr. Mohammad Arif, has been an excellent volleyball player, while my uncle was a national-level volleyball player and captain of the Uttar Pradesh team.</p>
 
-                <p>Inspired by this strong sporting background, I am deeply passionate about cricket, having played at school, club, and corporate levels. I have been actively involved in cricket as an all-rounder, with strengths in batting, fast bowling, and fielding. I have always preferred playing with a solid technique, focusing on straight bat batting for better control, timing, and consistency. I also developed a strong ability to play classic cricketing shots with proper timing and full control, reflecting a composed and technically sound batting style. I have participated in state-level open tournaments across multiple states in India, competing with and against players from Uttar Pradesh, Delhi, Haryana, Uttarakhand, Madhya Pradesh, Bihar, Himachal Pradesh, Maharashtra, and Tamil Nadu. I have also shared the field with players associated with state board tournaments, the Ranji Trophy, and the Indian Premier League (IPL).</p>
+                <p>My maternal aunt is a trained vocalist from Aligarh Muslim University and has received several awards for her singing, including recognition from the President of India. She has appeared in various television music programs, such as Doordarshan's Meri Awaaz Suno, and was a final runner-up in the 2016 Sony SAB Antakshari competition. She has also performed in TV shows, stage events, and live concerts across multiple countries. In addition, she has sung qawwalis and songs with renowned singer Altaf Raja and contributed to musical projects associated with the film Tarazu.</p>
+                <p>Below are the links to Recorded Songs & Qawwalis:-</p>
+                <ul className="lists songs">
+                  <li><a href="https://music.amazon.com/artists/B001C0HMY4/nusrat-waseem" target="_blank">Khwaja Ki Hai Ye Angnayee (With Altaf Raza)</a></li>
+                  <li><a href="https://music.amazon.com/artists/B001C0HMY4/nusrat-waseem" target="_blank">Jogan Aayee (With Altaf Raza)</a></li>
+                  <li><a href="https://music.amazon.com/artists/B001C0HMY4/nusrat-waseem" target="_blank">Chali Chali Woh Sharaab (With Altaf Raza)</a></li>
+                  <li><a href="https://music.amazon.com/artists/B001C0HMY4/nusrat-waseem" target="_blank">Ya Habibe Khuda (With Altaf Raza)</a></li>
+                  <li><a href="https://music.amazon.com/artists/B001C0HMY4/nusrat-waseem" target="_blank">Shahe Sanjar Ke Dar Ki (With Altaf Raza)</a></li>
+                  <li><a href="https://music.amazon.in/tracks/B09KDVP1CF" target="_blank">Nazar Na Hate Mere Yaar Se (Tarazu movie)</a></li>
+                </ul>
 
-                <p>I have a strong interest in politics and actively participate in election activities, including canvassing, campaigning, and connecting with people. I have a keen interest in understanding people’s challenges and contributing to meaningful solutions. People often approach me for guidance, and I support them by offering practical advice and helping them through my network and connections. I believe in helping people selflessly and without any bias, treating everyone with fairness and equal respect. I also enjoy exploring new experiences and embracing life with an adventurous spirit.</p>
+                <p>I have had a natural sporting ability since childhood and have been actively involved in cricket as an all-rounder, known for a strong batting technique with a preference for long innings, solid straight-bat play, and consistent timing, supported by good footwork and body control. I also possess the ability to play classic cricketing shots with composure and precision, reflecting a technically sound and disciplined batting style. In bowling, I was a pace bowler and once broke a batsman's helmet with my sharp bouncer, resulting in the batsman being seriously injured during the match. In fielding, I was highly agile and a sharp fielder with excellent reflexes. I have participated in state-level open tournaments across multiple states in India, competing with and against players from Uttar Pradesh, Delhi, Haryana, Uttarakhand, Madhya Pradesh, Bihar, Himachal Pradesh, Maharashtra, and Tamil Nadu. I have also shared the field with players associated with state-level tournaments, the Ranji Trophy, and the Indian Premier League (IPL). I am deeply passionate about cricket, having played at school, club, and corporate levels. I have been known as a stylish and well-rounded cricketer.</p>
+
+                <p>I have a strong interest in politics and actively participate in election activities, including canvassing, campaigning, and connecting with people. I have a keen interest in understanding people's challenges and contributing to meaningful solutions. People often approach me for guidance, and I support them by offering practical advice and helping them through my network and connections. I believe in helping people selflessly and without any bias, treating everyone with fairness and equal respect. I also enjoy exploring new experiences and embracing life with an adventurous spirit.</p>
 
                 <p>Today, I carry forward this legacy through my journey as a software engineer while actively contributing to helping people in need.</p>
               </div>{/* cnt */}
@@ -249,7 +265,7 @@ export default function AboutHome() {
               </div>{/* outlineBox */}
 
               <div className="btns center">
-                <a href={Global.numTel} target="_blank" data-aos="fade-left">Hire Us</a>
+                <a href={Global.numTel} target="_blank" data-aos="fade-left">Hire Me</a>
                 <Link to="/contact" data-aos="fade-right">Contact Me</Link>
               </div>{/* btns */}
             </div>{/* cols3 */}
