@@ -28,7 +28,7 @@
                 }
             }
         }
-        &.ads{background: url(../../images/ads/sideBar.jpg) no-repeat top / cover;display:flex;overflow: hidden;padding-top:250px;
+        &.ads{background: url(../../images/ads/adsSideBar.jpg) no-repeat top / cover;display:flex;overflow: hidden;padding-top:250px;
             a{@extend %fc;width: 100%;position: relative;padding:32px 12px 24px;text-align:center;row-gap:8px;
                 &::before{width: 200%;height: 200%;content: "";background: var(--c3);position: absolute;top: 0;left: -50%;transform: rotate(-10deg);}
                 > *{position: relative;color:#fff;}

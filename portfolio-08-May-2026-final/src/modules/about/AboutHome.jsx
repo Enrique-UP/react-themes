@@ -149,14 +149,42 @@ export default function AboutHome() {
                   <article data-aos="fade-left">
                     <p>
                       <b>HTML</b>
-                      <CounterNum target={70} suffix="%" />
+                      <CounterNum target={80} suffix="%" />
                     </p>
                     <i></i>
                   </article>
                   <article data-aos="fade-right">
                     <p>
+                      <b>PUG</b>
+                      <CounterNum target={60} suffix="%" />
+                    </p>
+                    <i></i>
+                  </article>
+                  <article data-aos="fade-left">
+                    <p>
                       <b>CSS</b>
+                      <CounterNum target={80} suffix="%" />
+                    </p>
+                    <i></i>
+                  </article>
+                  <article data-aos="fade-right">
+                    <p>
+                      <b>SASS</b>
+                      <CounterNum target={70} suffix="%" />
+                    </p>
+                    <i></i>
+                  </article>
+                  <article data-aos="fade-left">
+                    <p>
+                      <b>Bootstrap</b>
                       <CounterNum target={75} suffix="%" />
+                    </p>
+                    <i></i>
+                  </article>
+                  <article data-aos="fade-right">
+                    <p>
+                      <b>Responsive Web Design</b>
+                      <CounterNum target={95} suffix="%" />
                     </p>
                     <i></i>
                   </article>
@@ -170,7 +198,7 @@ export default function AboutHome() {
                   <article data-aos="fade-right">
                     <p>
                       <b>React JS & Vite</b>
-                      <CounterNum target={65} suffix="%" />
+                      <CounterNum target={60} suffix="%" />
                     </p>
                     <i></i>
                   </article>
@@ -183,21 +211,49 @@ export default function AboutHome() {
                   </article>
                   <article data-aos="fade-right">
                     <p>
-                      <b>Responsive</b>
-                      <CounterNum target={90} suffix="%" />
+                      <b>AMP (Accelerate Mobile Pages)</b>
+                      <CounterNum target={75} suffix="%" />
                     </p>
                     <i></i>
                   </article>
                   <article data-aos="fade-left">
                     <p>
-                      <b>AMP {/* (Accelerate Mobile Pages) */}</b>
+                      <b>Unbounce</b>
                       <CounterNum target={70} suffix="%" />
                     </p>
                     <i></i>
                   </article>
                   <article data-aos="fade-right">
                     <p>
-                      <b>Unbounce</b>
+                      <b>Pixel-Perfect Design</b>
+                      <CounterNum target={99} suffix="%" />
+                    </p>
+                    <i></i>
+                  </article>
+                  <article data-aos="fade-left">
+                    <p>
+                      <b>Web Performance Optimization</b>
+                      <CounterNum target={90} suffix="%" />
+                    </p>
+                    <i></i>
+                  </article>
+                  <article data-aos="fade-left">
+                    <p>
+                      <b>Cross-Browser Compatibility</b>
+                      <CounterNum target={90} suffix="%" />
+                    </p>
+                    <i></i>
+                  </article>
+                  <article data-aos="fade-left">
+                    <p>
+                      <b>Visual Studio Code</b>
+                      <CounterNum target={70} suffix="%" />
+                    </p>
+                    <i></i>
+                  </article>
+                  <article data-aos="fade-left">
+                    <p>
+                      <b>Adobe Dreamweaver</b>
                       <CounterNum target={65} suffix="%" />
                     </p>
                     <i></i>
@@ -205,7 +261,7 @@ export default function AboutHome() {
                   <article data-aos="fade-left">
                     <p>
                       <b>Adobe Photoshop</b>
-                      <CounterNum target={75} suffix="%" />
+                      <CounterNum target={70} suffix="%" />
                     </p>
                     <i></i>
                   </article>
@@ -223,18 +279,24 @@ export default function AboutHome() {
                 <p className="shd">Communication in multiple languages with varying fluency levels.</p>
                 <div className="skillBar colors two">
                   <article data-aos="fade-left">
-                    <b>English</b>
-                    <CounterNum target={65} suffix="%" />
+                    <p>
+                      <b>English</b>
+                      <CounterNum target={65} suffix="%" />
+                    </p>
                     <i></i>
                   </article>
                   <article data-aos="fade-right">
-                    <b>Hindi</b>
-                    <CounterNum target={75} suffix="%" />
+                    <p>
+                      <b>Hindi</b>
+                      <CounterNum target={75} suffix="%" />
+                    </p>
                     <i></i>
                   </article>
                   <article data-aos="fade-left">
-                    <b>Urdu</b>
-                    <CounterNum target={60} suffix="%" />
+                    <p>
+                      <b>Urdu (Spoken)</b>
+                      <CounterNum target={45} suffix="%" />
+                    </p>
                     <i></i>
                   </article>
                 </div>

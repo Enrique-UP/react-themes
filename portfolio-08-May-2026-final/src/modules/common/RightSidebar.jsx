@@ -12,10 +12,10 @@ import ScrollOffset from "./ScrollOffset";
 
 import calling from "../../assets/images/call.png";
 
-import Ls1 from "../../assets/images/sideBar/home1.jpg";
-import Ls2 from "../../assets/images/sideBar/home2.jpg";
-import Ls3 from "../../assets/images/sideBar/home3.jpg";
-import Ls4 from "../../assets/images/sideBar/home4.jpg";
+import Ls1 from "../../assets/images/sideBar/1.jpg";
+import Ls2 from "../../assets/images/sideBar/2.jpg";
+import Ls3 from "../../assets/images/sideBar/3.jpg";
+import Ls4 from "../../assets/images/sideBar/4.jpg";
 
 import T1 from "../../assets/images/team/t1-sb.jpg";
 import T2 from "../../assets/images/team/t2-sb.jpg";
