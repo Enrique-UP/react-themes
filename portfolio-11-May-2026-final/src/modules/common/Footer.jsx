@@ -6,10 +6,10 @@ import { Global, ScrollTopPage } from "./Global";
 import ScrollOffset from "./ScrollOffset";
 
 const PostData = [
-  {link:"#", date:"01 Jan", year:"0001", txt:"1 Lorem ipsum dolor sit amit lorem ipsum dolor sit amit"},
-  {link:"#", date:"02 Jan", year:"0002", txt:"2 Lorem ipsum dolor sit amit lorem ipsum dolor sit amit"},
-  {link:"#", date:"03 Jan", year:"0003", txt:"3 Lorem ipsum dolor sit amit lorem ipsum dolor sit amit"},
-  {link:"#", date:"04 Jan", year:"0004", txt:"4 Lorem ipsum dolor sit amit lorem ipsum dolor sit amit"}
+  {link:"https://www.facebook.com/share/p/1BCq6Ngwjo/", date:"02 Aug", year:"2021", txt:"Inauguration of my maternal aunt’s music studio in Mumbai"},
+  {link:"https://www.facebook.com/share/p/1EFRfvfdqK/", date:"20 Nov", year:"2019", txt:"Enjoyed Weekend"},
+  {link:"https://www.facebook.com/share/p/18gT9RgXsc/", date:"14 Sep", year:"2019", txt:"Office Time"},
+  {link:"https://www.facebook.com/share/p/1UZ9wVhLWp/", date:"19 Jul", year:"2019", txt:"Enjoyed at Phoenix United Mall."},
 ];
 function PostTag(props){
   return(
@@ -28,10 +28,10 @@ function PostTag(props){
 }
 
 const ContactData = [
-  {link: Global.numTel, icon: "&#xa001;", cnt: "num"},
-  {link: Global.whatsappLink, icon: "&#xa025;", cnt: "num"},
-  {link: `mailto:${Global.email}`, icon: "&#xa004;", cnt: "email"},
-  {icon: "&#xa007;", cnt: "address"}
+  {link: Global.numTel, icon: "&#xa001;", cnt: Global.num, contact:"num"},
+  {link: Global.whatsappLink, icon: "&#xa025;", cnt: Global.num, contact:"num"},
+  {link: `mailto:${Global.email}`, icon: "&#xa004;", cnt: Global.email, contact:"email"},
+  {icon: "&#xa007;", cnt: Global.address, contact:"address"}
 ];
 function ContactTag(props){
   return(
@@ -39,7 +39,7 @@ function ContactTag(props){
       <li>
         <a href={props.link} target="_blank">
           <i className="icon" dangerouslySetInnerHTML={{ __html: props.icon }}></i>
-          <span className="abt" {...{ [`data-${props.cnt}`]: props.cnt }}></span>
+          <span className="abt" {...{ [`data-${props.contact}`]: props.cnt }}></span>
         </a>
       </li>
     </>
@@ -105,7 +105,7 @@ export default function Footer() {
             </div>{/* cols */}
             <div className="col-sm-6 col-lg-4 col-xxl-3">
               <div className="fw" data-aos="fade-down">
-                  <p className="hd">Latest Posts</p>
+                  <p className="hd">Top Posts</p>
                   <ul className="posts">
                     {
                       PostData.map((val, ind) => {

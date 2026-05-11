@@ -7,9 +7,9 @@
 // Developing Clean & User-Friendly Interfaces
 
 
-[data-num]::before{content:"+1 000 000 0000";}
-[data-email]::before{content:"office@example.com";}
-[data-address]::before{content:"25-Lorem ipsum dolor sit ameet.";}
+[data-num]::before{content:attr(data-num);}
+[data-email]::before{content:attr(data-email);}
+[data-address]::before{content:attr(data-address);}
 
 
 .blsisl::before{content: "BLS International Services Limited";}

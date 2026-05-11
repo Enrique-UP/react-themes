@@ -79,15 +79,15 @@ export default function Wcu(){
                             <figure>
                                 <img src={img1} data-aos="fade-up" />
                                 <figcaption>
-                                    <p><a href={Global.numTel} target="_blank"><i className="icon">&#xa001;</i>{Global.num}</a></p>
-                                    <p><a href={`mailto:${Global.email}`} target="_blank"><i className="icon">&#xa004;</i>{Global.email}</a></p>
+                                    <p><a href={Global.numTel} target="_blank"><i className="icon">&#xa001;</i><span data-num={Global.num}></span></a></p>
+                                    <p><a href={`mailto:${Global.email}`} target="_blank"><i className="icon">&#xa004;</i><span data-email={Global.email}></span></a></p>
                                     <p>
                                         <a href={Global.fb} target="_blank"><i className="icon">&#xa019;</i></a>
                                         <a href={Global.tw} target="_blank"><i className="icon">&#xa020;</i></a>
                                         <a href={Global.lin} target="_blank"><i className="icon">&#xa021;</i></a>
-                                        <a href={Global.skp} target="_blank"><i className="icon">&#xa026;</i></a>
                                         <a href={Global.ins} target="_blank"><i className="icon">&#xa023;</i></a>
                                         <a href={Global.pnt} target="_blank"><i className="icon">&#xa024;</i></a>
+                                        <a href={Global.skp} target="_blank"><i className="icon">&#xa026;</i></a>
                                     </p>
                                 </figcaption>
                             </figure>

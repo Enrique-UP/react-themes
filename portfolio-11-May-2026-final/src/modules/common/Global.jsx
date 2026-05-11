@@ -1,21 +1,21 @@
 export const Global = {
-  num: "+1 000 000 0000",
-  numTel: "tel:+10000000000",
+  num: "+91 8745 999 480",
+  numTel: "tel:+918745999480",
   
-  whatsapp: "https://wa.me/910000000000",
-  whatsappLink: "https://wa.me/10000000000?text=Hi!%20Send%20me%20message.",
+  whatsapp: "https://wa.me/918745999480",
+  whatsappLink: "https://wa.me/18745999480?text=Hi!%20Send%20me%20message.",
 
-  email: "office@example.com",
-  emailTag: "mailto:office@example.com",
-  address: "25-Lorem ipsum dolor sit ameet.",
+  email: "nomaanarif786@gmail.com",
+  emailTag: "mailto:nomaanarif786@gmail.com",
+  address: "25, Mamoora Village, Sector 66, Noida, Gautam Buddh Nagar, Uttar Pradesh – 201301, India",
 
 
-  fb:"https://www.facebook.com/",
-  tw:"https://www.x.com/",
-  lin:"https://www.linkedin.com/",
-  ins:"https://www.instagram.com/",
+  fb:"https://www.facebook.com/nomaan.arif.9/",
+  tw:"https://x.com/nomaanarif786",
+  lin:"linkedin.com/in/nomaan-arif-b0590a102",
+  ins:"https://www.instagram.com/nomaanarif786/",
   pnt:"https://www.pinterest.com/",
-  skp:"skype:namehere",
+  skp:"skype:nomaanarif786",
 };
 
 export const TeamName = [

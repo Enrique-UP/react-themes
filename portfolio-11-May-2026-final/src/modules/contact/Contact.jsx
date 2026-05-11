@@ -6,10 +6,10 @@ import { Global } from "../common/Global";
 import FormArea from "./FormArea.jsx";
 
 const ContactData = [
-  { link: Global.numTel, icon: "&#xa001;", text: "Phone Number", contact: "num", ani: "fade-left" },
-  { link: Global.whatsappLink, icon: "&#xa025;", text: "WhatsApp Number", contact: "num", ani: "fade-right" },
-  { link: `mailto:${Global.email}`, icon: "&#xa004;", text: "Email Address", contact: "email", ani: "fade-left" },
-  { link: "https://www.google.com/maps/dir///@31.176664,-7.682147,3z?entry=ttu&amp;g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D", icon: "&#xa007;", text: "Address", contact: "address", ani: "fade-right" }
+  { link: Global.numTel, icon: "&#xa001;", text: "Phone Number", contact: "num", numVal: Global.num, ani: "fade-left" },
+  { link: Global.whatsappLink, icon: "&#xa025;", text: "WhatsApp Number", contact: "num", numVal: Global.num, ani: "fade-right" },
+  { link: `mailto:${Global.email}`, icon: "&#xa004;", text: "Email Address", contact: "email", numVal: Global.email, ani: "fade-left" },
+  { link: "https://www.google.com/maps/dir///@31.176664,-7.682147,3z?entry=ttu&amp;g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D", icon: "&#xa007;", text: "Address", contact: "address", numVal: Global.address, ani: "fade-right" }
 ];
 const ContactTag = (props) => {
   return (
@@ -18,7 +18,7 @@ const ContactTag = (props) => {
         <i className="icon" dangerouslySetInnerHTML={{ __html: props.icon }}></i>
         <span>
           <b>{props.text}</b>
-          <em {...{ [`data-${props.contact}`]: props.contact }}></em>
+          <em {...{ [`data-${props.contact}`]: props.numVal }}></em>
         </span>
       </a>
     </li>
