@@ -1,0 +1,50 @@
+.team{
+    .part{width: 100%;display: grid;grid-template-columns: repeat(4, minmax(0, 1fr));grid-gap:32px;}
+    .teamArea{width:100%;position: relative;overflow: hidden;@extend %fc;
+        > img{width:100%;}
+        span, i{position: absolute;}
+        span{left:16px;color:white;line-height:1.2;
+            > em{font-style: normal;}
+            &.name{display:flex;flex-direction: column;bottom:90px;
+                > b{font-size: 24px;font-weight: bold;}
+                > em{font-size: 18px;}
+            }
+            &.post{bottom:16px;font-style: italic;}
+        }
+        i{width:0;height:0;bottom:0;}
+        .leftArrow{left:0;border-top: 300px solid transparent;border-left: 250px solid var(--c4);}
+        .rightArrow{right:0;border-top: 150px solid transparent;border-right: 180px solid var(--c2);}
+        .bottomArrow{left: -80px;border-bottom: 56px solid var(--c12);border-left: 100px solid transparent;border-right: 1100px solid transparent;}
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px){
+    .team .part{grid-gap:8px;}
+    .team .teamArea .leftArrow {border-top-width: 270px;border-left-width: 220px;}
+    .team .teamArea .rightArrow {border-top-width: 120px;border-right-width: 140px;}
+}
+@media (min-width:768px) and (max-width:991px){
+    .team .part {grid-gap: 8px;}
+    .team .teamArea .leftArrow {border-top-width: 190px;border-left-width: 220px;}
+    .team .teamArea .rightArrow {border-top-width: 110px;border-right-width: 140px;}
+    .team .teamArea .bottomArrow {border-bottom-width: 50px;}
+    .team .teamArea span {left: 12px;}
+    .team .teamArea span.post {bottom: 12px;}
+    .team .teamArea span.name{bottom: 64px;}
+    .team .teamArea span.name > b {font-size: 20px;}
+    .team .teamArea span.name > em {font-size: 16px;}
+}
+@media (min-width:576px) and (max-width:767px){
+    .team .part {grid-template-columns: repeat(2, minmax(0, 2fr));}
+}
+@media (max-width:575px){
+    .team .part {grid-template-columns: repeat(2, minmax(0, 2fr));grid-gap: 8px;}
+    .team .teamArea .leftArrow {border-top-width: 200px;border-left-width: 200px;}
+    .team .teamArea .rightArrow {border-top-width: 100px;border-right-width: 140px;}
+    .team .teamArea .bottomArrow {border-bottom-width: 50px;}
+    .team .teamArea span {left: 8px;}
+    .team .teamArea span.post {bottom: 14px;}
+    .team .teamArea span.name{bottom: 64px;}
+    .team .teamArea span.name > b {font-size: 20px;}
+    .team .teamArea span.name > em {font-size: 16px;}
+}

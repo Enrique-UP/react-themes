@@ -1,0 +1,6 @@
+Port_with_import==========This is original version for website.
+I used images in src folder.
+
+
+Port_without_import=========This is for git live because on the git in one folder we can't keep more than 1000 files.
+I used images in public folder in this.
