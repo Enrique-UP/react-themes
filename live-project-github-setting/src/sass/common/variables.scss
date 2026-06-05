@@ -1,0 +1,45 @@
+:root{
+    --f1:#000000;
+    --f2:#777777;
+    --f3: #292929;
+    --f4: #323232;
+    --f5:#ababab;
+    
+
+    --c1:#192f59;
+    --c2:#3db166;
+
+
+    // --g1:#292929;--g2:#323232;
+    // --g3:#6a6a6a;--g4:#8c8c8c;--bk1:#aaa;--bk2:#ddd;--bk3:#f9f9f9;--bk4:#eee;--bk5:#dfeeeb;--head:#01b58b;
+    
+    --cb1:#eb4235;
+    --cb2:#fcbc05;
+    --cb3:#3e85f4;
+    --cb4:#32a953;
+    --cb5:#cc36eb;
+    --cb6:#9036eb;
+    --cb7:#eb7e35;
+    --cb8:#877e35;
+    --cb9:#824235;
+    --cb10:#2f4446;
+    
+    --g1:#eee;
+    --g2:mintcream;
+    --g3:#f8f8f8;
+
+    --b1:#ccc;
+}
+
+
+%cnt{content:"";}
+
+
+%trans{transition: 0.3s cubic-bezier(0,0,1,0.1);-webkit-transition: 0.3s cubic-bezier(0,0,1,0.1);-moz-transition: 0.3s cubic-bezier(0,0,1,0.1);}
+%transl{transition: 0.3s linear;-webkit-transition: 0.3s linear;-moz-transition: 0.3s linear;}
+%transd{transition-delay:0.3s;-webkit-transition-delay:0.3s;-moz-transition-delay:0.3s;}
+
+
+%fc{display: flex;flex-direction: column;}
+%center{display: flex;justify-content: center;align-items: center;}
+%userSelect{user-select: none;-webkit-user-select: none;-moz-user-select: none;}

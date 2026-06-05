@@ -1,0 +1,41 @@
+				
+https://www.rekhta.org/tags/siyasat-shayari/couplets?lang=hi				
+https://www.photoshopessentials.com/photo-effects/watercolor-painting/				
+				
+				
+first image copy three				
+ctrl+j, ctrl+j, ctrl+j				
+				
+first layer				
+filter=artistic=cutout		|| 		filter => filter gallery => cutout
+numbers of level=4				
+edge simplicity=4				
+edge fidelity=2		
+=> ok		
+change the blend mode of layer=Luminosity				
+				
+second layer				
+filter=artistic=dry brush		|| 	filter => filter gallery => dry brush		
+brush size=10				
+brush detail=10				
+texture=3				
+change the blend mode of layer=screen				
+				
+third layer				
+Filter > Noise > Median and set the "Radius" value to "12 pixels".				
+Change The Blend Mode to "Soft Light"				
+
+
+
+
+
+
+
+
+
+
+AMP stands for Accelerated Mobile Pages, AMP is an open-source library that provides a straightforward way to create web pages that are compelling, smooth, and load near instantaneously for users.
+
+AMP builds on your existing skill sets and frameworks to create web pages. AMP is supported by many different platforms, and it's compatible across browsers.
+
+AMP's ecosystem includes 25 million domains, 100+ technology providers, and leading platforms, that span the areas of publishing, advertising, e-commerce, local and small businesses, and more!

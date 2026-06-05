@@ -1,0 +1,21 @@
+.ads2{background:var(--c12);
+    hgroup{padding-bottom: 0;max-width:1000px;margin-inline: auto;
+        > *{color:#fff;}
+        .hd{font-family: var(--ff1);font-size: 56px;}
+        .hd, p{text-transform: none;}
+        p{font-weight: normal;}
+        &::before, &::after{display: none;}
+    }
+    .btns{
+        a{background: var(--c3) !important;
+            &:hover, &:active, &:focus{background: var(--c2) !important;}
+        }
+    }
+}
+@media (min-width:576px) and (max-width:991px){
+    .ads2 hgroup .hd{font-size: 48px;}
+}
+@media (max-width:575px){
+    .ads2 hgroup{row-gap: 16px;}
+    .ads2 hgroup .hd{font-size: 44px;}
+}
