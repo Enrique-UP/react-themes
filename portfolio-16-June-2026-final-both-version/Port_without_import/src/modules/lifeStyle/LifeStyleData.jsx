@@ -232,6 +232,7 @@ const LifeStyleData = [
   { imgFdr: "25dec2026-2", title:"Clock Tower & Rumi Darwaza, Lucknow", date: "25 Jan 2026", items: 18 },
   { imgFdr: "26jan2026", title:"Ambedkar Park, Lucknow", date: "26 Jan 2026", items: 26 },
   { imgFdr: "4apr2026", title:"Ardee Mall, Gurgaon", date: "4 Apr 2026", items: 17 },
+  { imgFdr: "14june2026_masuri", title:"Masuri, Ghaziabad", date: "14 Jun 2026", items: 17 },
 
 
   
